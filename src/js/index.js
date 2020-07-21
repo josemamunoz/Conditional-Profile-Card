@@ -33,14 +33,13 @@ function render(variables = {}) {
   document.querySelector("#widget_content").innerHTML = `<div class="widget">
             ${cover}
           <img src="${variables.avatarURL}" class="photo" />
-          <h1>Lucy Boilett</h1>
+          <h1>José Manuel Muñoz</h1>
           <h2>Web Developer</h2>
-          <h3>Miami, USA</h3>
+          <h3>Santiago, Chile</h3>
           <ul class="position-right">
-            <li><a href="https://twitter.com/alesanchezr"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="https://github.com/alesanchezr"><i class="fa fa-github"></i></a></li>
-            <li><a href="https://linkedin.com/alesanchezr"><i class="fa fa-linkedin"></i></a></li>
-            <li><a href="https://instagram.com/alesanchezr"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://github.com/josemamunoz"><i class="fa fa-github"></i></a></li>
+            <li><a href="https://linkedin.com/in/josemamunoz"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="https://instagram.com/jose_manuel_mz"><i class="fa fa-instagram"></i></a></li>
           </ul>
         </div>
     `;
@@ -54,21 +53,23 @@ window.onload = function() {
     // if includeCover is true the algorithm should
     includeCover: true,
     // this is the url of the image that will used as background for the profile cover
-    background: "https://images.unsplash.com/photo-1511974035430-5de47d3b95da",
+    background:
+      "https://images.unsplash.com/photo-1595147389795-37094173bfd8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2698&q=80",
     // this is the url for the profile avatar
-    avatarURL: "https://randomuser.me/api/portraits/women/42.jpg",
+    avatarURL:
+      "https://avatars2.githubusercontent.com/u/63678589?s=460&u=0407619b213444de67365586c17dcb11bbb15b31&v=4",
     // social media bar position (left or right)
     socialMediaPosition: "position-left",
     // social media usernames
     twitter: null,
-    github: "alesanchezr",
-    linkedin: null,
+    github: "josemamunoz",
+    linkedin: "josemamunoz",
     instagram: null,
     name: null,
     lastname: null,
     role: null,
-    country: null,
-    city: null
+    country: "Chile",
+    city: "Santiago"
   };
   render(window.variables); //render the card for the first time
 
